@@ -15,7 +15,7 @@ Install python-onvif-zeep
 
 You should clone this repository and run setup.py::
 
-    cd python-onvif-zeep && python setup.py install
+    cd onvif-package-python && python setup.py install
 
 
 Getting Started
