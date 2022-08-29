@@ -11,6 +11,8 @@ License: MIT
 Description: python-onvif-zeep
         ============
         
+        This is a modified package, modified by Skylark Labs (www.skylarklabs.ai)
+        
         ONVIF Client Implementation in Python
         
         Dependencies
@@ -23,11 +25,7 @@ Description: python-onvif-zeep
         
         You should clone this repository and run setup.py::
         
-            cd python-onvif-zeep && python setup.py install
-        
-        Alternatively, you can run::
-        
-            pip install --upgrade onvif_zeep
+            cd onvif-package-python && python setup.py install
         
         
         Getting Started

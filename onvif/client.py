@@ -236,7 +236,8 @@ class ONVIFCamera(object):
                 if name.lower() in SERVICES and capability is not None:
                     ns = SERVICES[name.lower()]['ns']
                     # self.xaddrs[ns] = capability['XAddr']
-                    self.xaddrs[ns] = 'http://'+str(self.host)+':'+str(self.port)+capability['XAddr'][22:]
+                    service_url_tag = capability['XAddr'].split('/')[-1]
+                    self.xaddrs[ns] = 'http://'+str(self.host)+':'+str(self.port)+'/onvif/'+service_url_tag
             except Exception:
                 logger.exception('Unexpected service type')
 
